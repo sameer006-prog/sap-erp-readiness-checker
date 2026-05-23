@@ -33,6 +33,7 @@ OPEN_ITEMS   |  350 records | Score:  88.3% | Critical:  41 | Warnings:   0 | In
 Total records checked:   730
 Total issues found:      190
 Average readiness score: 80.2%
+```
 
 A consultant doing this manually in Excel would spend 2-3 hours hunting these down (and would definitely miss a few). The 101 critical issues above would have caused direct SAP import failures. Catching them before go-live is the whole point of this script.
 
@@ -61,6 +62,7 @@ bradler_erp_checker/
 ├── analyzer.py        - the validation engine + Excel export logic
 ├── data/              - CSV files land here (created on run)
 └── output/            - Excel report lands here (created on run)
+
 Why I built this
 I built this project for my application for an SAP consulting trainee role focused on S/4HANA Cloud and Business ByDesign implementations.
 
