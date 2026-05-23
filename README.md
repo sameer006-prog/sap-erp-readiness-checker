@@ -54,16 +54,18 @@ Detail Sheets (Customers / Suppliers / Materials / Open Items): Lists every sing
 
 The output is formatted so you can hand it directly to the client as a clean-up checklist.
 
-Project structure
-Plaintext
+## Project structure
+
+```text
 bradler_erp_checker/
 ├── main.py            - runs the full pipeline end to end
 ├── generate_data.py   - builds the synthetic SME legacy data
 ├── analyzer.py        - the validation engine + Excel export logic
 ├── data/              - CSV files land here (created on run)
 └── output/            - Excel report lands here (created on run)
+```
+Why I built this ?
 
-Why I built this
 I built this project for my application for an SAP consulting trainee role focused on S/4HANA Cloud and Business ByDesign implementations.
 
 Data migration pre-checks are usually one of the first hands-on tasks a trainee gets involved in. Building this tool was my way of getting familiar with the actual field structures and data constraints SAP expects, which is much more effective than just reading the documentation. It also highlights my approach to consulting: automate the tedious prep work so the team can focus on solving the actual business problems.
